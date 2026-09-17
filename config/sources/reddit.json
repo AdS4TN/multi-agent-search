@@ -1,0 +1,17 @@
+﻿{
+  "_description": "Reddit RSS Worker 适配配置，只读取 reddit_proxy_pool 产物，不直接请求 Reddit",
+  "worker_id": "reddit-rss",
+  "enabled": true,
+  "reddit_monitor_dir": "D:/Temp/reddit-proxy-pool-runtime/reddit-monitor",
+  "jitter_min_seconds": 600,
+  "jitter_max_seconds": 1200,
+  "subreddits": [
+    {"name": "technology", "enabled": true, "topics": ["frontier-tech", "tech-news"]},
+    {"name": "programming", "enabled": true, "topics": ["developer-tools"]},
+    {"name": "MachineLearning", "enabled": true, "topics": ["llm", "frontier-tech"]},
+    {"name": "LocalLLaMA", "enabled": true, "topics": ["llm"]},
+    {"name": "OpenAI", "enabled": true, "topics": ["llm", "ai-agent"]},
+    {"name": "cybersecurity", "enabled": true, "topics": ["security"]},
+    {"name": "netsec", "enabled": true, "topics": ["security"]}
+  ]
+}

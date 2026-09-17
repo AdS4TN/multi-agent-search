@@ -1,0 +1,115 @@
+{
+  "_description": "RSS ???????HN????????????? tech-news-digest ?? RSS",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-tech-media",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 48,
+  "jitter_min_seconds": 1800,
+  "jitter_max_seconds": 3600,
+  "sources": [
+    {
+      "id": "hn-rss",
+      "name": "Hacker News Frontpage",
+      "url": "https://hnrss.org/frontpage",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "HN top stories"
+    },
+    {
+      "id": "ars-rss",
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/index",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Tech news"
+    },
+    {
+      "id": "techcrunch-rss",
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Startup and tech news"
+    },
+    {
+      "id": "verge-rss",
+      "name": "The Verge",
+      "url": "https://www.theverge.com/rss/index.xml",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Tech news"
+    },
+    {
+      "id": "mit-tech-review-rss",
+      "name": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/feed",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "ai-agent",
+        "frontier-tech"
+      ],
+      "note": "AI policy + deep analysis"
+    },
+    {
+      "id": "404media-rss",
+      "name": "404 Media",
+      "url": "https://www.404media.co/rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Independent tech investigative journalism"
+    },
+    {
+      "id": "wired-rss",
+      "name": "Wired",
+      "url": "https://www.wired.com/feed/rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Tech culture deep reporting"
+    },
+    {
+      "id": "ieee-spectrum-rss",
+      "name": "IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/feeds/feed.rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Engineering + frontier tech authority"
+    },
+    {
+      "id": "producthunt-rss",
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "New product discovery, AI tools"
+    }
+  ],
+  "max_concurrent_sources": 6
+}

@@ -1,0 +1,8 @@
+pydantic>=2.0
+feedparser>=6.0
+PyYAML>=6.0
+requests>=2.24
+tqdm>=4.0
+geoip2>=5.0
+pycryptodomex>=3.0
+fofa-hack>=2.5

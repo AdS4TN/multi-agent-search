@@ -1,0 +1,180 @@
+{
+  "_description": "YouTube RSS ???AI???? Crypto ????? tech-news-digest ?? RSS",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-youtube",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 168,
+  "jitter_min_seconds": 7200,
+  "jitter_max_seconds": 14400,
+  "sources": [
+    {
+      "id": "youtube-karpathy",
+      "name": "YouTube: Andrej Karpathy",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ",
+      "topics": [
+        "llm"
+      ],
+      "priority": true,
+      "enabled": true
+    },
+    {
+      "id": "youtube-ai-explained",
+      "name": "YouTube: AI Explained",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBjkbmzVplPgVF-GheNYWCg",
+      "topics": [
+        "llm"
+      ],
+      "priority": true,
+      "enabled": true
+    },
+    {
+      "id": "youtube-two-minute-papers",
+      "name": "YouTube: Two Minute Papers",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg",
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-yannic-kilcher",
+      "name": "YouTube: Yannic Kilcher",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew",
+      "topics": [
+        "llm"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-3blue1brown",
+      "name": "YouTube: 3Blue1Brown",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-fireship",
+      "name": "YouTube: Fireship",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-matt-wolfe",
+      "name": "YouTube: Matt Wolfe",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCl3U-xOlFVLlsheAug-QoWA",
+      "topics": [
+        "ai-agent"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-dabo-rai",
+      "name": "YouTube: Dabo Rai",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCx11muyXurAlpAzrjhERSCw",
+      "topics": [
+        "ai-agent"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-ai-jason",
+      "name": "YouTube: AI Jason",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCrXSVX9a1mj8l0CMLwKgMVw",
+      "topics": [
+        "ai-agent"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-prompt-engineering",
+      "name": "YouTube: Prompt Engineering",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCDq7SjbgRKty5TgGafW8Clg",
+      "topics": [
+        "ai-agent",
+        "llm"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-bankless",
+      "name": "YouTube: Bankless",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCAl9Ld79qaZxp9JzEOwd3aA",
+      "topics": [
+        "crypto"
+      ],
+      "priority": true,
+      "enabled": true
+    },
+    {
+      "id": "youtube-a16z-crypto",
+      "name": "YouTube: a16z crypto",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCTHq3W46BiAYjKUYZq2qm-Q",
+      "topics": [
+        "crypto"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-lex-fridman",
+      "name": "YouTube: Lex Fridman",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+      "topics": [
+        "llm",
+        "crypto"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-computerphile",
+      "name": "YouTube: Computerphile",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-ai-epiphany",
+      "name": "YouTube: AI Epiphany",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChepm4zf3QIYZgL5w7jl3MA",
+      "topics": [
+        "llm"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "youtube-huggingface",
+      "name": "YouTube: Hugging Face",
+      "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHlNU7kIZhRgSbhHvFoy72w",
+      "topics": [
+        "llm",
+        "ai-agent"
+      ],
+      "priority": false,
+      "enabled": true
+    }
+  ],
+  "max_concurrent_sources": 4,
+  "proxy_url": "http://127.0.0.1:7898",
+  "_proxy_note": "YouTube RSS ?????????????? reddit-proxy-monitor ????? Mihomo mixed ???"
+}

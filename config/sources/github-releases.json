@@ -1,0 +1,58 @@
+{
+  "_description": "GitHub Releases Worker 配置",
+  "worker_id": "github-releases",
+  "enabled": false,
+  "timeout_seconds": 30,
+  "max_releases_per_repo": 5,
+  "lookback_hours": 168,
+  "jitter_min_seconds": 3600,
+  "jitter_max_seconds": 10800,
+  "repos": [
+    {
+      "id": "openai-python-github",
+      "repo": "openai/openai-python",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "developer-tools"
+      ],
+      "note": "OpenAI Python SDK"
+    },
+    {
+      "id": "anthropic-sdk-python-github",
+      "repo": "anthropics/anthropic-sdk-python",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "developer-tools"
+      ],
+      "note": "Anthropic Python SDK"
+    },
+    {
+      "id": "langchain-github",
+      "repo": "langchain-ai/langchain",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "ai-agent",
+        "developer-tools"
+      ],
+      "note": "LangChain"
+    },
+    {
+      "id": "ollama-github",
+      "repo": "ollama/ollama",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "developer-tools"
+      ],
+      "note": "Ollama"
+    }
+  ],
+  "_disabled_reason": "????????GitHub ??????????????"
+}

@@ -1,0 +1,76 @@
+{
+  "_description": "RSS ?? AI ?????????????? tech-news-digest ?? RSS",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-official-ai",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 72,
+  "jitter_min_seconds": 1800,
+  "jitter_max_seconds": 4200,
+  "sources": [
+    {
+      "id": "openai-rss",
+      "name": "OpenAI Blog",
+      "url": "https://openai.com/blog/rss.xml",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "ai-agent",
+        "frontier-tech"
+      ],
+      "note": "Official OpenAI updates"
+    },
+    {
+      "id": "huggingface-rss",
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "ai-agent"
+      ],
+      "note": "Open source AI/ML"
+    },
+    {
+      "id": "googleai-rss",
+      "name": "Google AI Blog",
+      "url": "https://blog.google/technology/ai/rss/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "ai-agent",
+        "frontier-tech"
+      ],
+      "note": "Google AI research"
+    },
+    {
+      "id": "nvidia-ai-rss",
+      "name": "NVIDIA AI Blog",
+      "url": "https://blogs.nvidia.com/feed/",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "GPU/AI infrastructure"
+    },
+    {
+      "id": "deepmind-rss",
+      "name": "Google DeepMind Blog",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "Frontier AI research"
+    }
+  ],
+  "max_concurrent_sources": 6
+}

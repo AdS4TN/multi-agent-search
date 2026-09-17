@@ -1,0 +1,157 @@
+{
+  "_description": "RSS AI/LLM ??????????????? tech-news-digest ?? RSS",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-ai-blogs",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 96,
+  "jitter_min_seconds": 2400,
+  "jitter_max_seconds": 5400,
+  "sources": [
+    {
+      "id": "simonwillison-rss",
+      "name": "Simon Willison",
+      "url": "https://simonwillison.net/atom/everything/",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "ai-agent",
+        "frontier-tech"
+      ],
+      "note": "LLM/AI tooling, prolific blogger"
+    },
+    {
+      "id": "garymarcus-rss",
+      "name": "Gary Marcus",
+      "url": "https://garymarcus.substack.com/feed",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "AI critic, industry analysis"
+    },
+    {
+      "id": "sebas-rss",
+      "name": "Sebastian Raschka",
+      "url": "https://magazine.sebastianraschka.com/feed",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "LLM research and tutorials"
+    },
+    {
+      "id": "lilian-rss",
+      "name": "Lil'Log (Lilian Weng)",
+      "url": "https://lilianweng.github.io/index.xml",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "In-depth ML tutorials"
+    },
+    {
+      "id": "gwern-rss",
+      "name": "Gwern",
+      "url": "https://gwern.substack.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "Deep AI/ML research essays"
+    },
+    {
+      "id": "dwarkesh-rss",
+      "name": "Dwarkesh Patel",
+      "url": "https://www.dwarkeshpatel.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "ai-agent"
+      ],
+      "note": "AI interviews and analysis"
+    },
+    {
+      "id": "minimaxir-rss",
+      "name": "minimaxir (Max Woolf)",
+      "url": "https://minimaxir.com/index.xml",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "LLM benchmarks and experiments"
+    },
+    {
+      "id": "aisnakeoil-rss",
+      "name": "AI Snake Oil",
+      "url": "https://aisnakeoil.substack.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "Princeton professor, critical AI perspective"
+    },
+    {
+      "id": "bensbites-rss",
+      "name": "Ben's Bites",
+      "url": "https://www.bensbites.com/feed",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "the-decoder-rss",
+      "name": "The Decoder",
+      "url": "https://the-decoder.com/feed/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "ai-agent"
+      ]
+    },
+    {
+      "id": "venturebeat-ai-rss",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "ai-agent"
+      ],
+      "note": "AI industry news"
+    },
+    {
+      "id": "ml-reddit-rss",
+      "name": "r/MachineLearning",
+      "url": "https://www.reddit.com/r/MachineLearning/.rss",
+      "enabled": false,
+      "priority": false,
+      "topics": [
+        "llm",
+        "frontier-tech"
+      ],
+      "note": "Reddit ML community??????? reddit-proxy-monitor ??????? Reddit??? RSS Worker ???????? Reddit?"
+    }
+  ],
+  "max_concurrent_sources": 6
+}

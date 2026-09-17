@@ -1,0 +1,16 @@
+﻿[Unit]
+Description=Tech Radar RSS/Reddit news service
+After=network-online.target reddit-proxy-monitor.service
+Wants=network-online.target reddit-proxy-monitor.service
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tech-radar
+Environment=PYTHONPATH=/opt/tech-radar
+Environment=TECH_RADAR_REDDIT_MONITOR_DIR=/var/lib/reddit-proxy-pool-runtime/reddit-monitor
+ExecStart=/opt/tech-radar/.venv/bin/python -m tech_radar --runtime-dir /var/lib/tech-radar --config-dir /opt/tech-radar/config serve --host 0.0.0.0 --port 5080 --poll-seconds 300 --max-workers 5 --leaderboard-top 50
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+[Unit]
+Description=Reddit RSS proxy-pool monitor for Tech Radar
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tech-radar
+Environment=PYTHONPATH=/opt/tech-radar
+ExecStartPre=/opt/tech-radar/.venv/bin/python -m reddit_proxy_pool --config /opt/tech-radar/config/reddit-proxy-pool.linux.json update --sources /opt/tech-radar/config/proxy-sources.json
+ExecStartPre=/opt/tech-radar/.venv/bin/python -m reddit_proxy_pool --config /opt/tech-radar/config/reddit-proxy-pool.linux.json reddit-monitor --registry /opt/tech-radar/config/reddit-subreddits.json init
+ExecStartPre=/opt/tech-radar/.venv/bin/python -m reddit_proxy_pool --config /opt/tech-radar/config/reddit-proxy-pool.linux.json restart
+ExecStart=/opt/tech-radar/.venv/bin/python -m reddit_proxy_pool --config /opt/tech-radar/config/reddit-proxy-pool.linux.json reddit-monitor --registry /opt/tech-radar/config/reddit-subreddits.json daemon --poll-seconds 60
+ExecStop=/opt/tech-radar/.venv/bin/python -m reddit_proxy_pool --config /opt/tech-radar/config/reddit-proxy-pool.linux.json stop
+Restart=always
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

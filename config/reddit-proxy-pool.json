@@ -1,0 +1,25 @@
+{
+  "aggregator_home": "D:/Temp/wzdnzd-aggregator",
+  "runtime_dir": "D:/Temp/reddit-proxy-pool-runtime",
+  "ports": {
+    "mixed_port": 7898,
+    "external_controller": "127.0.0.1:9098"
+  },
+  "mihomo": {
+    "bind_address": "127.0.0.1",
+    "allow_lan": false,
+    "mode": "rule",
+    "log_level": "info"
+  },
+  "health": {
+    "url": "https://www.google.com/generate_204",
+    "timeout_ms": 5000,
+    "max_delay_ms": 10000,
+    "interval_seconds": 600
+  },
+  "reddit_test": {
+    "url": "https://www.reddit.com/r/artificial/.rss",
+    "user_agent": "windows:reddit-proxy-pool:0.1 (by /u/local-test; contact: local-test)",
+    "timeout_seconds": 30
+  }
+}

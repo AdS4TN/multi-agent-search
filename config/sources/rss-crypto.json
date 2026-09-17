@@ -1,0 +1,111 @@
+{
+  "_description": "RSS Crypto/Web3 ????????????? tech-news-digest ?? RSS",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-crypto",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 48,
+  "jitter_min_seconds": 2400,
+  "jitter_max_seconds": 5400,
+  "sources": [
+    {
+      "id": "vitalik-rss",
+      "name": "Vitalik Buterin",
+      "url": "https://vitalik.eth.limo/feed.xml",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "crypto"
+      ],
+      "note": "Ethereum founder"
+    },
+    {
+      "id": "coindesk-rss",
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "crypto"
+      ],
+      "note": "Major crypto news"
+    },
+    {
+      "id": "theblock-rss",
+      "name": "The Block",
+      "url": "https://www.theblock.co/rss.xml",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "crypto"
+      ],
+      "note": "Crypto news"
+    },
+    {
+      "id": "decrypt-rss",
+      "name": "Decrypt",
+      "url": "https://decrypt.co/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "crypto"
+      ],
+      "note": "Crypto and web3 news"
+    },
+    {
+      "id": "cointelegraph-rss",
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "crypto"
+      ],
+      "note": "Crypto news and analysis"
+    },
+    {
+      "id": "messari-rss",
+      "name": "Messari",
+      "url": "https://messari.io/rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "crypto"
+      ],
+      "note": "Crypto research reports"
+    },
+    {
+      "id": "defiant-rss",
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "crypto"
+      ],
+      "note": "DeFi professional media"
+    },
+    {
+      "id": "a16zcrypto-rss",
+      "name": "a16z Crypto",
+      "url": "https://a16zcrypto.substack.com/feed",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "crypto"
+      ]
+    },
+    {
+      "id": "bankless-rss",
+      "name": "Bankless",
+      "url": "https://newsletter.banklesshq.com/feed",
+      "enabled": false,
+      "priority": true,
+      "topics": [
+        "crypto"
+      ]
+    }
+  ],
+  "max_concurrent_sources": 6
+}

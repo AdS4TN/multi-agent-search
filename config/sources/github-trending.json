@@ -1,0 +1,13 @@
+{
+  "_description": "GitHub Trending Worker 配置",
+  "worker_id": "github-trending",
+  "enabled": false,
+  "timeout_seconds": 30,
+  "min_stars": 20,
+  "lookback_days": 30,
+  "max_repo_age_days": 30,
+  "per_topic": 15,
+  "jitter_min_seconds": 7200,
+  "jitter_max_seconds": 21600,
+  "_disabled_reason": "????????GitHub ??????????????"
+}

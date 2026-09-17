@@ -1,0 +1,258 @@
+{
+  "_description": "RSS ???????????????????? tech-news-digest ?? RSS??????????????",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-engineering-security",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 120,
+  "jitter_min_seconds": 3600,
+  "jitter_max_seconds": 7200,
+  "sources": [
+    {
+      "id": "krebs-rss",
+      "name": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Cybersecurity"
+    },
+    {
+      "id": "daringfireball-rss",
+      "name": "Daring Fireball",
+      "url": "https://daringfireball.net/feeds/main",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Apple/tech commentary"
+    },
+    {
+      "id": "pg-rss",
+      "name": "Paul Graham",
+      "url": "http://www.aaronsw.com/2002/feeds/pgessays.rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Startups and tech essays"
+    },
+    {
+      "id": "troyhunt-rss",
+      "name": "Troy Hunt",
+      "url": "https://www.troyhunt.com/rss/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Security, HIBP"
+    },
+    {
+      "id": "antirez-rss",
+      "name": "antirez",
+      "url": "http://antirez.com/rss",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Redis creator, systems"
+    },
+    {
+      "id": "mitchellh-rss",
+      "name": "Mitchell Hashimoto",
+      "url": "https://mitchellh.com/feed.xml",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Ghostty, infrastructure"
+    },
+    {
+      "id": "geohot-rss",
+      "name": "Geohot",
+      "url": "https://geohot.github.io/blog/feed.xml",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech",
+        "llm"
+      ],
+      "note": "tinygrad, AI infrastructure"
+    },
+    {
+      "id": "bytebytego-rss",
+      "name": "ByteByteGo",
+      "url": "https://blog.bytebytego.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "System design + engineering by Alex Xu"
+    },
+    {
+      "id": "overreacted-rss",
+      "name": "Overreacted (Dan Abramov)",
+      "url": "https://overreacted.io/rss.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "eli-bendersky-rss",
+      "name": "Eli Bendersky",
+      "url": "https://eli.thegreenplace.net/feeds/all.atom.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "matklad-rss",
+      "name": "matklad (Alex Kladov)",
+      "url": "https://matklad.github.io/feed.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "lucumr-rss",
+      "name": "Armin Ronacher",
+      "url": "https://lucumr.pocoo.org/feed.atom",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "oldnewthing-rss",
+      "name": "The Old New Thing (Raymond Chen)",
+      "url": "https://devblogs.microsoft.com/oldnewthing/feed",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "rachelbythebay-rss",
+      "name": "Rachel by the Bay",
+      "url": "https://rachelbythebay.com/w/atom.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": false
+    },
+    {
+      "id": "xeiaso-rss",
+      "name": "Xe Iaso",
+      "url": "https://xeiaso.net/blog.rss",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "pluralistic-rss",
+      "name": "Pluralistic (Cory Doctorow)",
+      "url": "https://pluralistic.net/feed/",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "lcamtuf-rss",
+      "name": "lcamtuf (Michal Zalewski)",
+      "url": "https://lcamtuf.substack.com/feed",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "hillelwayne-rss",
+      "name": "Hillel Wayne",
+      "url": "https://buttondown.com/hillelwayne/rss",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "dynomight-rss",
+      "name": "Dynomight",
+      "url": "https://dynomight.net/feed.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "geoffreylitt-rss",
+      "name": "Geoffrey Litt",
+      "url": "https://www.geoffreylitt.com/feed.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "fabiensanglard-rss",
+      "name": "Fabien Sanglard",
+      "url": "https://fabiensanglard.net/rss.xml",
+      "topics": [
+        "frontier-tech"
+      ],
+      "priority": false,
+      "enabled": true
+    },
+    {
+      "id": "github-blog-rss",
+      "name": "GitHub Blog",
+      "url": "https://github.blog/feed/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "developer-tools",
+        "security",
+        "infra"
+      ],
+      "note": "???????GitHub ??????? GitHub API/Trending ??"
+    },
+    {
+      "id": "cloudflare-blog-rss",
+      "name": "Cloudflare Blog",
+      "url": "https://blog.cloudflare.com/rss/",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "infra",
+        "security"
+      ],
+      "note": "??????????????"
+    }
+  ],
+  "max_concurrent_sources": 6
+}

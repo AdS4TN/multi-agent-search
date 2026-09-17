@@ -1,0 +1,189 @@
+{
+  "settings": {
+    "interval_min_minutes": 30,
+    "interval_max_minutes": 60,
+    "global_min_request_seconds": 60,
+    "timezone": "Asia/Shanghai",
+    "include_crypto": true,
+    "views": [
+      {
+        "key": "new",
+        "label": "最新",
+        "path": "new/.rss",
+        "weight": 1
+      },
+      {
+        "key": "hot",
+        "label": "当前热门",
+        "path": "hot/.rss",
+        "weight": 3
+      },
+      {
+        "key": "top_day",
+        "label": "今日高赞",
+        "path": "top/.rss?t=day",
+        "weight": 4
+      },
+      {
+        "key": "rising",
+        "label": "正在上升",
+        "path": "rising/.rss",
+        "weight": 2
+      }
+    ]
+  },
+  "subreddits": [
+    {
+      "name": "technology",
+      "category": "core-tech",
+      "enabled": true,
+      "priority": true,
+      "topics": ["frontier-tech", "tech-news"],
+      "note": "综合科技新闻主入口"
+    },
+    {
+      "name": "programming",
+      "category": "core-tech",
+      "enabled": true,
+      "priority": true,
+      "topics": ["software-engineering", "developer"],
+      "note": "编程、软件工程与开发者生态"
+    },
+    {
+      "name": "MachineLearning",
+      "category": "core-ai",
+      "enabled": true,
+      "priority": true,
+      "topics": ["llm", "ai-research"],
+      "note": "机器学习、论文和研究动态"
+    },
+    {
+      "name": "LocalLLaMA",
+      "category": "core-ai",
+      "enabled": true,
+      "priority": true,
+      "topics": ["llm", "open-source-ai"],
+      "note": "本地大模型、开源模型与推理生态"
+    },
+    {
+      "name": "OpenAI",
+      "category": "core-ai",
+      "enabled": true,
+      "priority": true,
+      "topics": ["llm", "ai-agent"],
+      "note": "OpenAI 社区动态"
+    },
+    {
+      "name": "Anthropic",
+      "category": "core-ai",
+      "enabled": true,
+      "priority": true,
+      "topics": ["llm", "ai-agent"],
+      "note": "Anthropic / Claude 社区动态"
+    },
+    {
+      "name": "artificial",
+      "category": "trend-ai",
+      "enabled": true,
+      "priority": false,
+      "topics": ["ai", "frontier-tech"],
+      "note": "AI 综合讨论，覆盖广但噪声较高"
+    },
+    {
+      "name": "ChatGPT",
+      "category": "trend-ai",
+      "enabled": true,
+      "priority": false,
+      "topics": ["llm", "consumer-ai"],
+      "note": "ChatGPT 产品体验、舆情和爆点"
+    },
+    {
+      "name": "singularity",
+      "category": "trend-ai",
+      "enabled": true,
+      "priority": false,
+      "topics": ["agi", "future"],
+      "note": "AGI 与未来主义趋势，需降低事实权重"
+    },
+    {
+      "name": "Futurology",
+      "category": "trend-tech",
+      "enabled": true,
+      "priority": false,
+      "topics": ["frontier-tech", "future"],
+      "note": "前沿科技和未来趋势"
+    },
+    {
+      "name": "cybersecurity",
+      "category": "security-engineering",
+      "enabled": true,
+      "priority": true,
+      "topics": ["security", "cybersecurity"],
+      "note": "安全事件、攻防趋势和行业动态"
+    },
+    {
+      "name": "netsec",
+      "category": "security-engineering",
+      "enabled": true,
+      "priority": true,
+      "topics": ["security", "research"],
+      "note": "网络安全研究与漏洞讨论"
+    },
+    {
+      "name": "privacy",
+      "category": "security-engineering",
+      "enabled": true,
+      "priority": false,
+      "topics": ["privacy", "policy"],
+      "note": "隐私、监管和安全产品趋势"
+    },
+    {
+      "name": "devops",
+      "category": "security-engineering",
+      "enabled": true,
+      "priority": false,
+      "topics": ["infra", "developer"],
+      "note": "DevOps、云基础设施和工程实践"
+    },
+    {
+      "name": "selfhosted",
+      "category": "security-engineering",
+      "enabled": true,
+      "priority": false,
+      "topics": ["infra", "open-source"],
+      "note": "自托管、开源工具和个人基础设施"
+    },
+    {
+      "name": "CryptoCurrency",
+      "category": "crypto",
+      "enabled": true,
+      "priority": false,
+      "topics": ["crypto"],
+      "note": "加密货币综合，按产品定位可关闭"
+    },
+    {
+      "name": "Bitcoin",
+      "category": "crypto",
+      "enabled": true,
+      "priority": false,
+      "topics": ["crypto"],
+      "note": "Bitcoin 生态，按产品定位可关闭"
+    },
+    {
+      "name": "ethereum",
+      "category": "crypto",
+      "enabled": true,
+      "priority": false,
+      "topics": ["crypto", "ethereum"],
+      "note": "Ethereum 生态，按产品定位可关闭"
+    },
+    {
+      "name": "defi",
+      "category": "crypto",
+      "enabled": true,
+      "priority": false,
+      "topics": ["crypto", "defi"],
+      "note": "DeFi 生态，按产品定位可关闭"
+    }
+  ]
+}

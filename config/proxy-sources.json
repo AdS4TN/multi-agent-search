@@ -1,0 +1,12 @@
+[
+  {
+    "id": "pawdroid-free-servers",
+    "name": "Pawdroid Free Servers",
+    "url": "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub",
+    "enabled": true,
+    "priority": 50,
+    "format_hint": "mixed",
+    "trust_level": "low",
+    "note": "MVP 验证源；公共免费代理，仅用于 Reddit RSS 专用代理池验证。"
+  }
+]

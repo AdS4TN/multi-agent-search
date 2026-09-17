@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="Tech Radar 多信源科技新闻总榜、本地信源事件和采集运维面板。" />
+  <title>Tech Radar · One Clear Overview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/web/styles.css?v=202606221309" />
+  <link rel="stylesheet" href="/web/LogoLoop.css?v=202606221309" />
+</head>
+<body>
+  <div class="orb orb-cyan"></div>
+  <div class="orb orb-blue"></div>
+  <div class="scanline"></div>
+
+  <div class="app-shell">
+    <header class="topbar glass-panel">
+      <a class="brand" href="/" data-route="home" aria-label="Tech Radar 首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <strong>Tech Radar</strong>
+        </span>
+      </a>
+
+      <nav class="nav-tabs" aria-label="主导航">
+        <a href="/" data-route="home">总榜首页</a>
+        <a href="/sources" data-route="sources">信源事件</a>
+        <a href="/ops" data-route="ops">运维监控</a>
+      </nav>
+
+      <section class="sidebar-block" aria-label="主题分类">
+        <div class="sidebar-label">Topics</div>
+        <div id="sidebarTopics" class="sidebar-topic-list">
+          <span>等待数据同步…</span>
+        </div>
+      </section>
+
+      <div class="top-actions">
+        <span id="syncStatus" class="sync-status">SYNC · IDLE</span>
+        <button id="refreshButton" class="ghost-button" type="button">刷新数据</button>
+      </div>
+    </header>
+
+    <main id="app" class="main-grid" tabindex="-1" aria-live="polite" aria-busy="true">
+      <section class="loading-card glass-panel">
+        <div class="pulse-dot"></div>
+        <h1>正在连接情报流…</h1>
+      </section>
+    </main>
+  </div>
+
+  <script src="/web/app.js?v=202606221309" defer></script>
+</body>
+</html>

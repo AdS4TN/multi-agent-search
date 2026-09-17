@@ -1,0 +1,84 @@
+{
+  "_description": "RSS ?????AI ????????? tech-news-digest ?? RSS",
+  "_source_alignment": "Generated from tech-news-digest config/defaults/sources.json RSS entries; GitHub API/Trending remains disabled.",
+  "worker_id": "rss-cn-tech",
+  "enabled": true,
+  "timeout_seconds": 30,
+  "max_items_per_source": 20,
+  "lookback_hours": 72,
+  "jitter_min_seconds": 2400,
+  "jitter_max_seconds": 5400,
+  "sources": [
+    {
+      "id": "36kr-rss",
+      "name": "36氪",
+      "url": "https://36kr.com/feed",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "frontier-tech",
+        "crypto"
+      ],
+      "note": "中文科技媒体"
+    },
+    {
+      "id": "synced-rss",
+      "name": "机器之心 Synced",
+      "url": "https://www.jiqizhixin.com/rss",
+      "enabled": true,
+      "priority": true,
+      "topics": [
+        "llm",
+        "ai-agent",
+        "frontier-tech"
+      ],
+      "note": "中文AI媒体"
+    },
+    {
+      "id": "qbitai-rss",
+      "name": "量子位 QbitAI",
+      "url": "https://www.qbitai.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "llm",
+        "ai-agent"
+      ],
+      "note": "中文AI媒体 (may 403)"
+    },
+    {
+      "id": "infoq-rss",
+      "name": "InfoQ 中文",
+      "url": "https://www.infoq.cn/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "技术社区"
+    },
+    {
+      "id": "ifanr-rss",
+      "name": "爱范儿",
+      "url": "https://www.ifanr.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Chinese tech product reviews"
+    },
+    {
+      "id": "sspai-rss",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "enabled": true,
+      "priority": false,
+      "topics": [
+        "frontier-tech"
+      ],
+      "note": "Chinese productivity + tech depth"
+    }
+  ],
+  "max_concurrent_sources": 6
+}
